@@ -5,5 +5,8 @@ fn main() {
     let mut s = String::new();
     std::io::stdin().read_line(&mut s).expect("Did you not enter a string?");
     println!("Your mood right now is :{}",s);
-    record::record_mood();
+    match record::record_mood() {
+        Ok(_) => println!("Well done!"),
+        Err(_) => println!("Error!")
+    }
 }
