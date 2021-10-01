@@ -2,7 +2,7 @@ use std::time::{SystemTime, UNIX_EPOCH};
 
 mod record;
 
-pub fn run(){
+pub fn run() {
     println!("Hello Esteban");
     loop {
         println!("Hello! What is your mood right now?...");
